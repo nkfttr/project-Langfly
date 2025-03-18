@@ -1,0 +1,114 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-size: contain; /* Garante que a imagem caiba completamente sem cortar */
+    background-position: center; /* Centraliza a imagem na tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.btnContainer {
+    width: 125px;
+    height: 125px;
+    background: rgba(207, 122, 13, 0.83);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn button {
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.3s;
+    background: rgba(207, 122, 13, 0.83);
+}
+
+.btn button:hover {
+    background: rgba(255, 150, 16, 0.83);
+}
+
+.areas {
+    background-color: gold;
+    color: black;
+    width: 18px;
+    height: 40px;
+    transition: all;
+    align-content: center;
+}
+
+.area1, .area2, .area3, .area4 {
+    position: absolute;
+    transition: all 0.2s;
+}
+
+.area1 {
+    top: 345px;
+    left: 315px;
+}
+
+.area2 {
+    top: 230px;
+    left: 120px;
+}
+
+.area3 {
+    top: 310px;
+    left: 155px;
+}
+
+.area4 {
+    top: 140px;
+    left: 190px;
+}
+
+.piece {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.1s, left 0.1s;
+}
+
+.highlight {
+    background-color: yellow;
+    color: black;
+}
+
+.areas:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.8);
+    background-color: yellow;
+}
