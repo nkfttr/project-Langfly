@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Organized files">
-      <change afterPath="$PROJECT_DIR$/cssFiles/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cssFiles/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cssFiles/.idea/project-Langfly.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cssFiles/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cred.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/cred.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/creditos.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/creditos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fucCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/fucCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/func.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.png" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/map.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menuCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/menuCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/style.css" afterDir="false" />
+    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="adds">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFiles/creditos.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/creditos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,21 +16,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "chindev1"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chindev1&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/chindev1/project-Langfly.git",
-    "accountId": "56e4d75a-929b-4e35-b818-d6f346e0747f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chindev1/project-Langfly.git&quot;,
+    &quot;accountId&quot;: &quot;56e4d75a-929b-4e35-b818-d6f346e0747f&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2uVkoaqEgQm9shD2xkYhQZPSOIf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,8 +40,10 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +52,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nico.DESKTOP-BM98OHK\WebstormProjects\project-Langfly\imgs" />
+      <recent name="C:\Users\Nico.DESKTOP-BM98OHK\WebstormProjects\project-Langfly\htmlFiles" />
+      <recent name="C:\Users\Nico.DESKTOP-BM98OHK\WebstormProjects\project-Langfly\cssFiles" />
+      <recent name="C:\Users\Nico.DESKTOP-BM98OHK\WebstormProjects\project-Langfly" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,7 +75,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742341304773</updated>
-      <workItem from="1742341306301" duration="324000" />
+      <workItem from="1742341306301" duration="1174000" />
+      <workItem from="1742424123751" duration="79000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />
@@ -83,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742341631825</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adds">
+      <option name="closed" value="true" />
+      <created>1742341669096</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742341669096</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Organized files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Organized files" />
+    <MESSAGE value="adds" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds" />
   </component>
 </project>

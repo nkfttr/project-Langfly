@@ -3,7 +3,7 @@ let posX = 50;
 let posY = 50;
 
 document.addEventListener('keydown', (event) => {
-    const speed = 1; // Velocidade de movimento
+    const speed = 2; // Velocidade de movimento
 
     switch(event.key) {
         case 'w': 
