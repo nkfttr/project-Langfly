@@ -1,19 +1,53 @@
 body, html {
-    background-color: rgba(18, 18, 18, 0.93);
+    background-color: rgb(18, 18, 18);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.game-container{
+.trad-container{
+
+    background-color: rgb(54, 50, 50);
     color: white;
     border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 500px;
+
+}
+.text{
+    align-content: baseline;
+}
+.player{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 580px;
+    top: 450px;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+}
+.game-container{
+    color: white;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 300px;
     height: 500px;
 }
+.trad{
 
+}
+
+.tiro{
+
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%);
+    transition: left 0.5s ease-in-out, top 0.5s ease-in-out;
+}
 .bloco{
     position: absolute;
     display: flex;
@@ -27,6 +61,6 @@ body, html {
     border-radius: 5px;
 }
 
-.bloco:nth-child(1) { top: 200px; left: 633px; }
+.bloco:nth-child(1) { top: 200px; left: 630px; }
 .bloco:nth-child(2) { top: 200px; left: 530px; }
-.bloco:nth-child(3) { top: 200px; left: 430px; }
+.bloco:nth-child(3) { top: 200px; left: 427px; }
