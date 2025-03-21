@@ -1,0 +1,32 @@
+body, html {
+    background-color: rgba(18, 18, 18, 0.93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.game-container{
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+}
+
+.bloco{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgba(227, 82, 82, 0.61);
+    width: 80px;
+    height: 80px;
+    border-color: #E0E0E0;
+    border-radius: 5px;
+}
+
+.bloco:nth-child(1) { top: 200px; left: 633px; }
+.bloco:nth-child(2) { top: 200px; left: 530px; }
+.bloco:nth-child(3) { top: 200px; left: 430px; }
