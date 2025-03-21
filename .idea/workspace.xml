@@ -5,13 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="adds">
+      <change afterPath="$PROJECT_DIR$/cssFiles/.idea/fase1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlFiles/fase1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naveLang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlFiles/creditos.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/creditos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssFiles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFiles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFiles/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,12 +37,12 @@
     &quot;assignee&quot;: &quot;chindev1&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/chindev1/project-Langfly.git&quot;,
-    &quot;accountId&quot;: &quot;56e4d75a-929b-4e35-b818-d6f346e0747f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/nkfttr/project-Langfly.git",
+    "accountId": "98ad0656-6e66-4c8e-a9b8-c1281e3d4bbe"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -39,11 +54,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.menu.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,6 +78,11 @@
       <recent name="C:\Users\Nico.DESKTOP-BM98OHK\WebstormProjects\project-Langfly\cssFiles" />
       <recent name="C:\Users\Nico.DESKTOP-BM98OHK\WebstormProjects\project-Langfly" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/project-Langfly/htmlFiles/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -77,6 +101,7 @@
       <updated>1742341304773</updated>
       <workItem from="1742341306301" duration="1174000" />
       <workItem from="1742424123751" duration="79000" />
+      <workItem from="1742516586704" duration="6007000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />

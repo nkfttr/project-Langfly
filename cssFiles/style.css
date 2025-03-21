@@ -10,25 +10,55 @@ body, html {
     align-items: center;
     text-align: center;
 }
+.logoDiscord{
+    width: 100px;
+    height: 100px;
+    background-image: url('../imgs/disc2.png');
+}
 
-.container {
-    width: 100%;
-    height: 100%;
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: #222;
+     overflow: hidden;
+     position: relative;
+ }
+.game-container {
+    position: relative;
+    width: 590px; /* Ajuste conforme necessário */
+    height: 418px; /* Ajuste conforme necessário */
+    background-image: url('../imgs/mapNew.png');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+}
+.phase {
+    width: 30px;
+    height: 30px;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    font-size: 16px;
+    font-weight: bold;
 }
+/* ajusta a posição de cada fase  */
+.phase:nth-child(1) { top: 240px; left: 325px; }
+.phase:nth-child(2) { top: 350px; left: 450px; }
+.phase:nth-child(3) { top: 230px; left: 450px; }
 
-.background {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 80%;
-    background-size: contain; /* Garante que a imagem caiba completamente sem cortar */
-    background-position: center; /* Centraliza a imagem na tela */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+.player {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: left 0.5s ease-in-out, top 0.5s ease-in-out;
 }
 
 .btnContainer {
@@ -58,49 +88,8 @@ body, html {
     background: rgba(255, 150, 16, 0.83);
 }
 
-.areas {
-    background-color: gold;
-    color: black;
-    width: 18px;
-    height: 40px;
-    transition: all;
-    align-content: center;
-}
-
-.area1, .area2, .area3, .area4 {
-    position: absolute;
-    transition: all 0.2s;
-}
-
-.area1 {
-    top: 345px;
-    left: 315px;
-}
-
-.area2 {
-    top: 230px;
-    left: 120px;
-}
-
-.area3 {
-    top: 310px;
-    left: 155px;
-}
-
-.area4 {
-    top: 140px;
-    left: 190px;
-}
-
-.piece {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: red;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: top 0.1s, left 0.1s;
+canvas {
+    display: block;
 }
 
 .highlight {
