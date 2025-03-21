@@ -76,7 +76,7 @@ body, html {
     cursor: pointer;
     width: 100px;
     transition: 0.3s;
-    background: rgba(207, 122, 13, 0.83);
+    background: rgb(54, 50, 50);
 }
 
 .btn button:hover {
