@@ -34,14 +34,14 @@ body, html {
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 500px;
+    height: 350px;
 }
 .trad{
 
 }
 
 .tiro{
-
+    display: none;
     position: absolute;
     width: 15px;
     height: 15px;
@@ -49,6 +49,7 @@ body, html {
     transition: left 0.5s ease-in-out, top 0.5s ease-in-out;
 }
 .bloco{
+    font: -apple-system-body;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -64,3 +65,34 @@ body, html {
 .bloco:nth-child(1) { top: 200px; left: 630px; }
 .bloco:nth-child(2) { top: 200px; left: 530px; }
 .bloco:nth-child(3) { top: 200px; left: 427px; }
+
+.btnContainer {
+    width: 125px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 100px;
+    background: rgb(63, 62, 62);
+    align-content: center;
+    border-radius: 10px;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.btn button:hover{
+    background: rgba(255, 150, 16, 0.6);
+}
+.btn button{
+    align-self: center;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.3s;
+    background-color: rgba(18, 18, 18, 0.4);
+
+}

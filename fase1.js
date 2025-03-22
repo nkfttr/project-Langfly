@@ -1,34 +1,35 @@
 let player = document.getElementById("player");
 let tiro = document.getElementById("tiro")
 
-let posX = 580, posY = 450; // Posição inicial
+let posX = 580, posY = 450; // posição inicial
 let posTX = posX, posTY = posY;
 
 document.addEventListener("keydown", (event) => {
-    const step = 25, stepT = 10; // Distância que ele anda
+    const step = 25, stepT = 10; // distância que ele anda
 
     if (event.key === "a" && posX >460) {
-        posX -= step; // Esquerda
+        posX -= step; // esquerda
     }
     if (event.key === "d" && posX < 680) {
-        posX += step; // Direita
+        posX += step; // direita
     }
 
     if (event.key === "k") {
-        tiro.style.display = "block"
         let tiroInterval = setInterval(() => {
             if (posTY <= 250) {
                 clearInterval(tiroInterval);
                 return;
             }
-            posTY -= 10; // Move o tiro para cima
+            tiro.style.display = "block"
+            posTY -= 10;
+            // Move o tiro para cima
             tiro.style.top = posTY + "px";
-        }, 50);
+        }, 10);
         setTimeout(() => {
-            tiro.style.display = "none";
             posTY = posY;
             posTX = posX;
-        }, 2000);
+            tiro.style.display = "none";
+        }, 600);
     }
     player.style.left = posX + "px";
     player.style.top = posY + "px";

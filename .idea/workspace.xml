@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Estruturação da primeira fase;&#10;Icone da nave Inglesa.">
+    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Cor do botao voltar em MAPA, alterada.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cssFiles/fase1.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/fase1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssFiles/fucCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/fucCss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssFiles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fase1.js" beforeDir="false" afterPath="$PROJECT_DIR$/fase1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlFiles/fase1.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/fase1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naveLang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFiles/func.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/func.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +101,7 @@
       <updated>1742341304773</updated>
       <workItem from="1742341306301" duration="1174000" />
       <workItem from="1742424123751" duration="79000" />
-      <workItem from="1742516586704" duration="14108000" />
+      <workItem from="1742516586704" duration="22256000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />
@@ -133,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742527332303</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Codigo inicial do tiro feito;&#10;Movimentação feita;&#10;Arrumado H1 do TRADUZA.">
+      <option name="closed" value="true" />
+      <created>1742531865301</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742531865301</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Cor do botao voltar em MAPA, alterada.">
+      <option name="closed" value="true" />
+      <created>1742532033427</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742532033427</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +162,8 @@
     <MESSAGE value="adds" />
     <MESSAGE value="Movimentação no mapa paras as 3 primeiras fases;&#10;Utiliza o &quot;k&quot; para entrar na fase 2, feito como teste;&#10;Icone do discord colocado." />
     <MESSAGE value="Estruturação da primeira fase;&#10;Icone da nave Inglesa." />
-    <option name="LAST_COMMIT_MESSAGE" value="Estruturação da primeira fase;&#10;Icone da nave Inglesa." />
+    <MESSAGE value="Codigo inicial do tiro feito;&#10;Movimentação feita;&#10;Arrumado H1 do TRADUZA." />
+    <MESSAGE value="Cor do botao voltar em MAPA, alterada." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cor do botao voltar em MAPA, alterada." />
   </component>
 </project>
