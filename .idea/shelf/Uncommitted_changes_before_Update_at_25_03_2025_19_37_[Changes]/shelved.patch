@@ -1,0 +1,149 @@
+Index: htmlFiles/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Langfly</title>\r\n\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap\" rel=\"stylesheet\">\r\n    \r\n    <link rel=\"stylesheet\" href=\"../cssFiles/style.css\">\r\n</head>\r\n<body>\r\n    <div id=\"coords\" style=\"font-size: 20px; \r\n    font-family: 'Press Start 2P', sans-serif; \r\n    margin-top: 20px;\r\n    color: white\"></div>\r\n\r\n    <div id=\"coordsY\" style=\"font-size: 20px; color: white;\r\n     font-family: 'Press Start 2P', sans-serif\"></div>\r\n\r\n    <div class=\"container\">\r\n        <img src=\"../imgs/mapNew.jpg\" alt=\"Background\" class=\"background\" style=\"background-color: transparent\" ;>\r\n        <div id=\"piece\" class=\"piece\"></div>\r\n\r\n    </div>\r\n    <div class=\"btnContainer\">\r\n        <div class=\"btn\">\r\n            <button onclick=\"window.location.href='menu.html'\">Voltar</button>\r\n        </div>\r\n    </div>\r\n    <script src=\"../script.js\"></script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/htmlFiles/index.html b/htmlFiles/index.html
+--- a/htmlFiles/index.html	(revision 43e29efdf571e14585130e5837502ff8ffbc2436)
++++ b/htmlFiles/index.html	(date 1742425141357)
+@@ -19,7 +19,7 @@
+      font-family: 'Press Start 2P', sans-serif"></div>
+ 
+     <div class="container">
+-        <img src="../imgs/mapNew.jpg" alt="Background" class="background" style="background-color: transparent" ;>
++        <img src="../imgs/mapNew.png" alt="Background" class="background" style="background-color: transparent" ;>
+         <div id="piece" class="piece"></div>
+ 
+     </div>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0471b48d-2b00-4083-b026-98c1c1faa1b6\" name=\"Changes\" comment=\"adds\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/htmlFiles/creditos.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/htmlFiles/creditos.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;chindev1&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/chindev1/project-Langfly.git&quot;,\r\n    &quot;accountId&quot;: &quot;56e4d75a-929b-4e35-b818-d6f346e0747f&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2uVkoaqEgQm9shD2xkYhQZPSOIf\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Nico.DESKTOP-BM98OHK\\WebstormProjects\\project-Langfly\\imgs\" />\r\n      <recent name=\"C:\\Users\\Nico.DESKTOP-BM98OHK\\WebstormProjects\\project-Langfly\\htmlFiles\" />\r\n      <recent name=\"C:\\Users\\Nico.DESKTOP-BM98OHK\\WebstormProjects\\project-Langfly\\cssFiles\" />\r\n      <recent name=\"C:\\Users\\Nico.DESKTOP-BM98OHK\\WebstormProjects\\project-Langfly\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0471b48d-2b00-4083-b026-98c1c1faa1b6\" name=\"Changes\" comment=\"\" />\r\n      <created>1742341304773</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1742341304773</updated>\r\n      <workItem from=\"1742341306301\" duration=\"1174000\" />\r\n      <workItem from=\"1742424123751\" duration=\"79000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Organized files\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1742341631825</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1742341631825</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"adds\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1742341669096</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1742341669096</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Organized files\" />\r\n    <MESSAGE value=\"adds\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"adds\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 43e29efdf571e14585130e5837502ff8ffbc2436)
++++ b/.idea/workspace.xml	(date 1742942213106)
+@@ -4,9 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="adds">
++    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Mapa atualizado&#10;-Egeg">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/htmlFiles/creditos.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/creditos.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/htmlFiles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/index.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -36,22 +36,24 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "main",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.menu.html.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\Nico.DESKTOP-BM98OHK\WebstormProjects\project-Langfly\imgs" />
+@@ -77,6 +79,8 @@
+       <updated>1742341304773</updated>
+       <workItem from="1742341306301" duration="1174000" />
+       <workItem from="1742424123751" duration="79000" />
++      <workItem from="1742424236253" duration="2213000" />
++      <workItem from="1742942138950" duration="74000" />
+     </task>
+     <task id="LOCAL-00001" summary="Organized files">
+       <option name="closed" value="true" />
+@@ -94,7 +98,47 @@
+       <option name="project" value="LOCAL" />
+       <updated>1742341669096</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Mapa atualizado&#10;-Egeg">
++      <option name="closed" value="true" />
++      <created>1742424980867</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1742424980867</updated>
++    </task>
++    <task id="LOCAL-00004" summary="Mapa atualizado&#10;-Egeg">
++      <option name="closed" value="true" />
++      <created>1742424992066</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1742424992066</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Mapa atualizado&#10;-Egeg">
++      <option name="closed" value="true" />
++      <created>1742424995144</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1742424995144</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Mapa atualizado&#10;-Egeg">
++      <option name="closed" value="true" />
++      <created>1742425011043</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1742425011043</updated>
++    </task>
++    <task id="LOCAL-00007" summary="Mapa atualizado&#10;-Egeg">
++      <option name="closed" value="true" />
++      <created>1742425169376</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1742425169376</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -103,6 +147,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Organized files" />
+     <MESSAGE value="adds" />
+-    <option name="LAST_COMMIT_MESSAGE" value="adds" />
++    <MESSAGE value="Mapa atualizado&#10;-Egeg" />
++    <option name="LAST_COMMIT_MESSAGE" value="Mapa atualizado&#10;-Egeg" />
+   </component>
+ </project>
+\ No newline at end of file

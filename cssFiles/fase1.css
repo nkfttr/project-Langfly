@@ -6,7 +6,6 @@ body, html {
     text-align: center;
 }
 .trad-container{
-
     background-color: rgb(54, 50, 50);
     color: white;
     border-radius: 10px;
@@ -14,7 +13,6 @@ body, html {
     align-items: center;
     width: 320px;
     height: 500px;
-
 }
 .text{
     align-content: baseline;
@@ -36,17 +34,13 @@ body, html {
     width: 300px;
     height: 350px;
 }
-.trad{
 
-}
-
-.tiro{
-    display: none;
+.tiro {
     position: absolute;
-    width: 15px;
+    width: 5px;
     height: 15px;
-    transform: translate(-50%, -50%);
-    transition: left 0.5s ease-in-out, top 0.5s ease-in-out;
+    background-color: red;
+    border-radius: 3px;
 }
 .bloco{
     font: -apple-system-body;
@@ -62,9 +56,9 @@ body, html {
     border-radius: 5px;
 }
 
-.bloco:nth-child(1) { top: 200px; left: 630px; }
-.bloco:nth-child(2) { top: 200px; left: 530px; }
-.bloco:nth-child(3) { top: 200px; left: 427px; }
+.bloco:nth-child(1) { top: 200px; left: 746px; }
+.bloco:nth-child(2) { top: 200px; left: 646px; }
+.bloco:nth-child(3) { top: 200px; left: 543px; }
 
 .btnContainer {
     width: 125px;
@@ -95,4 +89,8 @@ body, html {
     transition: 0.3s;
     background-color: rgba(18, 18, 18, 0.4);
 
+}
+
+.star{
+    margin-right: 30px;
 }

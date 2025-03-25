@@ -4,7 +4,7 @@ const player = document.getElementById('player');
 
 // Armazena as posições das fases
 const phasePositions = Array.from(phases).map(phase => ({
-    top: phase.offsetTop +20+ phase.offsetHeight / 2, //pega o horizontal da tela e posiciona no centro
+    top: phase.offsetTop +50+ phase.offsetHeight / 2, //pega o horizontal da tela e posiciona no centro
     left: phase.offsetLeft -3 + phase.offsetWidth / 2 //pega o vertical da tela e posiciona no centro
 }));
 

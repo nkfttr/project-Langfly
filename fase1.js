@@ -1,37 +1,66 @@
 let player = document.getElementById("player");
-let tiro = document.getElementById("tiro")
 
-let posX = 580, posY = 450; // posição inicial
-let posTX = posX, posTY = posY;
+let posX = 580, posY = 450; // Posição inicial do jogador
 
 document.addEventListener("keydown", (event) => {
-    const step = 25, stepT = 10; // distância que ele anda
+    const step = 25; // Distância que o jogador anda
 
-    if (event.key === "a" && posX >460) {
-        posX -= step; // esquerda
+    if (event.key === "a" && posX > 560) {
+        posX -= step; // Esquerda
     }
-    if (event.key === "d" && posX < 680) {
-        posX += step; // direita
+    if (event.key === "d" && posX < 800) {
+        posX += step; // Direita
     }
-
     if (event.key === "k") {
-        let tiroInterval = setInterval(() => {
-            if (posTY <= 250) {
-                clearInterval(tiroInterval);
-                return;
-            }
-            tiro.style.display = "block"
-            posTY -= 10;
-            // Move o tiro para cima
-            tiro.style.top = posTY + "px";
-        }, 10);
-        setTimeout(() => {
-            posTY = posY;
-            posTX = posX;
-            tiro.style.display = "none";
-        }, 600);
+        dispararTiro();
     }
+
     player.style.left = posX + "px";
     player.style.top = posY + "px";
-    tiro.style.top = posTY + "px";
-})
+});
+
+function dispararTiro() {
+    let tiro = document.createElement("div");
+    tiro.classList.add("tiro");
+    document.body.appendChild(tiro);
+
+    let tiroX = posX; // Centraliza o tiro no meio do player
+    let tiroY = posY-30;
+
+    tiro.style.left = tiroX + "px";
+    tiro.style.top = tiroY + "px";
+
+    let tiroInterval = setInterval(() => {
+        if (tiroY <= 0) {
+            clearInterval(tiroInterval);
+            tiro.remove();
+            return;
+        }
+
+        tiroY -= 10;
+        tiro.style.top = tiroY + "px";
+
+        let blocos = document.querySelectorAll(".bloco"); // Atualiza a lista de blocos
+        for (let i = 0; i < blocos.length; i++) {
+            if (colisao(tiro, blocos[i])) {
+                clearInterval(tiroInterval);
+                tiro.remove();
+                blocos[i].style.display = "none"; // Remove o bloco ao colidir
+                break; // Sai do loop para evitar acessar um elemento removido
+            }
+        }
+    }, 10);
+}
+
+// Função para checar colisão entre o tiro e o bloco
+function colisao(tiro, bloco) {
+    let tiroRect = tiro.getBoundingClientRect();
+    let blocoRect = bloco.getBoundingClientRect();
+
+    return (
+        tiroRect.left < blocoRect.right &&
+        tiroRect.right > blocoRect.left &&
+        tiroRect.top < blocoRect.bottom &&
+        tiroRect.bottom > blocoRect.top
+    );
+}
