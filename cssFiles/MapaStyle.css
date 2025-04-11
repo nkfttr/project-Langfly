@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#gameArea {
+    width: 100%;
+    height: 80vh;
+    max-width: 1200px;
+    margin-top: 60px;
+}
+
+.btnContainer {
+    margin-top: 20px;
+}
+
+.btn button {
+    font-family: 'Press Start 2P', sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: 2px solid #666;
+    border-radius: 5px;
+}
+
+.btn button:hover {
+    background-color: #555;
+}
+
+#player {
+    transition: cx 0.5s ease-in-out, cy 0.5s ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#coords, #coordsY {
+    font-size: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    position: absolute;
+    left: 10px;
+}
+
+#coords {
+    top: 10px;
+}
+
+#coordsY {
+    top: 40px;
+}
+
+.stars.highlight {
+    fill: yellow;
+}

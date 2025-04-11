@@ -6,12 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Cor do botao voltar em MAPA, alterada.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cssFiles/fase1.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/fase1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cssFiles/fucCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/fucCss.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cssFiles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fase1.js" beforeDir="false" afterPath="$PROJECT_DIR$/fase1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFiles/creditos.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/creditos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlFiles/fase1.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/fase1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlFiles/func.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFiles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFiles/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -36,12 +36,12 @@
     &quot;assignee&quot;: &quot;chindev1&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/nkfttr/project-Langfly.git",
-    "accountId": "98ad0656-6e66-4c8e-a9b8-c1281e3d4bbe"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nkfttr/project-Langfly.git&quot;,
+    &quot;accountId&quot;: &quot;e78e5370-03ef-4b8e-a02b-bb90bbe09b7a&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -50,26 +50,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.menu.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menu.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\cssFiles" />
@@ -79,10 +80,18 @@
       <recent name="C:\Users\Nico.DESKTOP-BM98OHK\WebstormProjects\project-Langfly" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.menu.html">
     <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/project-Langfly/htmlFiles/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="menu.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project-Langfly/htmlFiles/menu.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.menu.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -102,6 +111,10 @@
       <workItem from="1742341306301" duration="1174000" />
       <workItem from="1742424123751" duration="79000" />
       <workItem from="1742516586704" duration="22256000" />
+      <workItem from="1743114553207" duration="193000" />
+      <workItem from="1743115069703" duration="326000" />
+      <workItem from="1744332102926" duration="4862000" />
+      <workItem from="1744338762310" duration="4472000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />
