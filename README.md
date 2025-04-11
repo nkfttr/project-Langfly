@@ -11,6 +11,9 @@ JAVASCRIPT.
 
 Utilizando elementos DOM e SVG.
 
-Artes: discord: eg_eg
+Artes: 
+
+discord: eg_eg
+
 MUITO OBRIGADO EGEG ❤
 
