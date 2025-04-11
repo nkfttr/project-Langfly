@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Cor do botao voltar em MAPA, alterada.">
+    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Utilização de elementos DOM e SVG para os elementos e organizalção HTML&#10;&#10;player: criado como um circulo usando SVG&#10;&#10;estrelas no mapa: mapeados como elementos SVG: x, y, font, font-size, fill, class&#10;&#10;Alterações no código css: MapaStyle">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cssFiles/MapaStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlFiles/mapa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/newButterf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/newButterf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapCode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssFiles/menuCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/menuCss.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cssFiles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlFiles/creditos.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/creditos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlFiles/fase1.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/fase1.html" afterDir="false" />
@@ -114,7 +121,7 @@
       <workItem from="1743114553207" duration="193000" />
       <workItem from="1743115069703" duration="326000" />
       <workItem from="1744332102926" duration="4862000" />
-      <workItem from="1744338762310" duration="4472000" />
+      <workItem from="1744338762310" duration="4901000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />
@@ -164,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742532033427</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Utilização de elementos DOM e SVG para os elementos e organizalção HTML&#10;&#10;player: criado como um circulo usando SVG&#10;&#10;estrelas no mapa: mapeados como elementos SVG: x, y, font, font-size, fill, class&#10;&#10;Alterações no código css: MapaStyle">
+      <option name="closed" value="true" />
+      <created>1744349905705</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744349905705</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +192,7 @@
     <MESSAGE value="Estruturação da primeira fase;&#10;Icone da nave Inglesa." />
     <MESSAGE value="Codigo inicial do tiro feito;&#10;Movimentação feita;&#10;Arrumado H1 do TRADUZA." />
     <MESSAGE value="Cor do botao voltar em MAPA, alterada." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cor do botao voltar em MAPA, alterada." />
+    <MESSAGE value="Utilização de elementos DOM e SVG para os elementos e organizalção HTML&#10;&#10;player: criado como um circulo usando SVG&#10;&#10;estrelas no mapa: mapeados como elementos SVG: x, y, font, font-size, fill, class&#10;&#10;Alterações no código css: MapaStyle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Utilização de elementos DOM e SVG para os elementos e organizalção HTML&#10;&#10;player: criado como um circulo usando SVG&#10;&#10;estrelas no mapa: mapeados como elementos SVG: x, y, font, font-size, fill, class&#10;&#10;Alterações no código css: MapaStyle" />
   </component>
 </project>
