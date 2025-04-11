@@ -1,2 +1,15 @@
 # project-Langfly
-Language game
+
+Projeto de um jogo de idiomas.
+Linguagens utilizadas:
+IDE: JetBrains WebStorm
+
+HTML,
+CSS,
+JAVASCRIPT.
+
+Utilizando elementos DOM e SVG.
+
+Artes: discord: eg_eg
+MUITO OBRIGADO EGEG ❤
+
