@@ -1,7 +1,8 @@
 # project-Langfly
 
 Projeto de um jogo de idiomas.
-Linguagens utilizadas:
+Linguagens utilizadas e tecnologias:
+
 IDE: JetBrains WebStorm
 
 HTML,
