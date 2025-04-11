@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Organização dos arquivos" />
+    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Correção de alguns erros em commits passados" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +53,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Nico/WebstormProjects/project-Langfly/cssFiles/OLD",
+    "last_opened_file_path": "C:/Users/Nico/WebstormProjects/project-Langfly/scripts",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -66,11 +66,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\scripts" />
+      <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\imgs" />
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\cssFiles\OLD" />
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\scripts\OLD" />
-      <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\scripts" />
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\imgs\OLD" />
-      <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\htmlFiles\OLD" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.menu.html">
@@ -107,7 +107,7 @@
       <workItem from="1743114553207" duration="193000" />
       <workItem from="1743115069703" duration="326000" />
       <workItem from="1744332102926" duration="4862000" />
-      <workItem from="1744338762310" duration="5246000" />
+      <workItem from="1744338762310" duration="5607000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />
@@ -173,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744350251993</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Correção de alguns erros em commits passados">
+      <option name="closed" value="true" />
+      <created>1744350544281</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1744350544281</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +196,7 @@
     <MESSAGE value="Cor do botao voltar em MAPA, alterada." />
     <MESSAGE value="Utilização de elementos DOM e SVG para os elementos e organizalção HTML&#10;&#10;player: criado como um circulo usando SVG&#10;&#10;estrelas no mapa: mapeados como elementos SVG: x, y, font, font-size, fill, class&#10;&#10;Alterações no código css: MapaStyle" />
     <MESSAGE value="Organização dos arquivos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Organização dos arquivos" />
+    <MESSAGE value="Correção de alguns erros em commits passados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção de alguns erros em commits passados" />
   </component>
 </project>
