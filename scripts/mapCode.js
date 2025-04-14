@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // MUDA PRA FASE1
         if (currentPhase === 1 && event.key === 'k') {
-            window.location.href = "fase1.html";
+            window.location.href = "..//testes/fase1Teste.html";
         }
     });
 });
