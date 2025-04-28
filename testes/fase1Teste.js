@@ -13,6 +13,8 @@ const backButton = document.getElementById('backButton');
 const imgNave = new Image();
 imgNave.src = "../imgs/flyIng.png";
 
+const imgExplosion = new Image();
+imgExplosion.src= "../imgs/sprites/tirospr1.png";
 
 // Variáveis do jogo
 let score = 0;
@@ -86,6 +88,9 @@ function createBlocks() {
     }
 }
 
+function createExplosion(x, y){
+    ctx.drawImage(imgExplosion, x, y, 120, 120);
+}
 // Função para desenhar a nave
 function drawShip() {
 
@@ -193,7 +198,12 @@ function updateBlocks() {
             ) {
                 // Colisão detectada
                 ship.bullets.splice(j, 1);
+
+                const blockX = blocks[i].x;
+                const blockY = blocks[i].y;
+
                 blocks.splice(i, 1);
+                createExplosion(blockX, blockY);
                 score += 10;
                 updateScore();
                 createBlocks(); // Criar novo bloco
@@ -204,6 +214,7 @@ function updateBlocks() {
         // Verificar se bloco saiu da tela
         if (blocks[i] && blocks[i].y > canvas.height) {
             blocks.splice(i, 1);
+
             createBlocks(); // Criar novo bloco
         }
 

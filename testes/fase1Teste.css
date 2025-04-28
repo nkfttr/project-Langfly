@@ -58,3 +58,6 @@ button {
 .backButton{
     left: 100px !important;
 }
+#instructions{
+    margin-bottom: 20px;
+}
