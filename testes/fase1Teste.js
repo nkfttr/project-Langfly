@@ -117,11 +117,13 @@ function drawBlocks() {
     blocks.forEach(block => {
         ctx.fillStyle = block.color;
         ctx.fillRect(block.x, block.y, block.width, block.height);
+
         ctxText.fillStyle = "white";
         ctxText.font = "16px Arial";
         ctxText.textAlign = "center";
         ctxText.textBaseline = "middle";
         ctxText.fillText(block.text, block.x+40, block.y+40, 40);
+
 
     });
 
@@ -177,6 +179,7 @@ function updateBullets() {
 
 // Função para atualizar os blocos
 function updateBlocks() {
+
     for (let i = blocks.length - 1; i >= 0; i--) {
         blocks[i].y += blocks[i].speed;
 
@@ -232,7 +235,22 @@ backButton.addEventListener('keydown', function(event){
 });
 // Função para atualizar a pontuação
 function updateScore() {
-    scoreElement.textContent = `Pontos: ${score}`;
+    scoreStars();
+    scoreElement.textContent = `Estrelas: ${starsArray}`;
+}
+
+//Adiciona estrelas ao inves de numeros na pontuação
+function scoreStars(){
+    //limpa o array antes de adicionar novas estrelas à exibição, para nao adicionar mais deuma
+    starsArray = [];
+    //traduz a numeração da pontuação para somente um digito
+    let starCount = Math.floor(score / 100);
+    //adiciona ao array uma estrela a cada centena
+    if(score > 99) {
+        for (let i = 1; i <= starCount; i++) {
+            starsArray.push("⭐")
+        }
+    }
 }
 
 // Função de game over
