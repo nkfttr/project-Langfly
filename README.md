@@ -7,7 +7,7 @@ IDE: JetBrains WebStorm
 HTML,
 CSS,
 JAVASCRIPT.
-Utilizando elementos DOM e SVG.
+Utilizando elementos DOM, SVG e Canvas para gráficos e organização da página.
 
 Artes: 
 MUITO OBRIGADO EGEG ❤
