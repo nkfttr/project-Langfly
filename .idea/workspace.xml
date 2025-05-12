@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Alteração no codigo completo da fase 1 utilizando o Canvas.&#10;Codigo de geração rpocedural dos blocos implementada.&#10;Cooldown dos tiros implementado.&#10;Randomização das palavras, implementado.&#10;Pontuação implementada.&#10;Tela de Gameover implementada.">
+    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Criei uma div descartavel no momento em fase1Teste.html;&#10;&#10;Criação de explosão ao destruir um bloco.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/fase1Teste.js" beforeDir="false" afterPath="$PROJECT_DIR$/testes/fase1Teste.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testes/fase1Teste.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testes/fase1Teste.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testes/fase1Teste.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +33,12 @@
     &quot;assignee&quot;: &quot;chindev1&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/nkfttr/project-Langfly.git&quot;,
-    &quot;accountId&quot;: &quot;e78e5370-03ef-4b8e-a02b-bb90bbe09b7a&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/nkfttr/project-Langfly.git",
+    "accountId": "c031e882-7278-4d33-b5b4-5f2ec8154616"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/testes/fase1Teste.js" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -67,7 +69,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Nico/WebstormProjects/project-Langfly/cssFiles/OLD",
+    "last_opened_file_path": "C:/Users/Nico/WebstormProjects/project-Langfly",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -80,14 +82,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\imgs\sprites" />
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\cssFiles\OLD" />
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\htmlFiles\OLD" />
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\scripts\OLD" />
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\testes" />
-      <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.menu.html">
+  <component name="RunManager">
     <configuration name="fase1Teste.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project-Langfly/testes/fase1Teste.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -140,7 +142,9 @@
       <workItem from="1744338762310" duration="6345000" />
       <workItem from="1744598698039" duration="10694000" />
       <workItem from="1745652224429" duration="1436000" />
-      <workItem from="1745809630507" duration="2455000" />
+      <workItem from="1745809630507" duration="5872000" />
+      <workItem from="1747024849709" duration="2000" />
+      <workItem from="1747024974908" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />
@@ -230,7 +234,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744610118308</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Conversão de pontuação para estrelas feita.">
+      <option name="closed" value="true" />
+      <created>1745816509388</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745816509388</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Criei uma div descartavel no momento em fase1Teste.html;&#10;&#10;Criação de explosão ao destruir um bloco.">
+      <option name="closed" value="true" />
+      <created>1745817926401</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745817926401</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +268,8 @@
     <MESSAGE value="Correção de alguns erros em commits passados" />
     <MESSAGE value="Alteração das cores do botão no Menu" />
     <MESSAGE value="Alteração no codigo completo da fase 1 utilizando o Canvas.&#10;Codigo de geração rpocedural dos blocos implementada.&#10;Cooldown dos tiros implementado.&#10;Randomização das palavras, implementado.&#10;Pontuação implementada.&#10;Tela de Gameover implementada." />
-    <option name="LAST_COMMIT_MESSAGE" value="Alteração no codigo completo da fase 1 utilizando o Canvas.&#10;Codigo de geração rpocedural dos blocos implementada.&#10;Cooldown dos tiros implementado.&#10;Randomização das palavras, implementado.&#10;Pontuação implementada.&#10;Tela de Gameover implementada." />
+    <MESSAGE value="Conversão de pontuação para estrelas feita." />
+    <MESSAGE value="Criei uma div descartavel no momento em fase1Teste.html;&#10;&#10;Criação de explosão ao destruir um bloco." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criei uma div descartavel no momento em fase1Teste.html;&#10;&#10;Criação de explosão ao destruir um bloco." />
   </component>
 </project>
