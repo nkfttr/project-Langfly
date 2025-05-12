@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Aprendizado de Línguas</title>
+  <link rel="stylesheet" href="loginCSS.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form action="conectar_login.php" method="POST">
+        <label for="usuario">Nome de Usuário:</label>
+        <input type="text" name="usuario" id="usuario" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required>
+
+        <button type="submit">Entrar</button>
+      </form>
+      <p>Ainda não tem uma conta? <a href="#cadastro">Cadastre-se</a></p>
+    </div>
+
+    <div class="cadastro-box" id="cadastro">
+      <h2>Cadastro</h2>
+      <form action="cadastrar_usuario.php" method="POST">
+        <label for="nome_completo">Nome Completo:</label>
+        <input type="text" name="nome_completo" id="nome_completo" required>
+
+        <label for="usuario_cad">Nome de Usuário:</label>
+        <input type="text" name="usuario" id="usuario_cad" required>
+
+        <label for="senha_cad">Senha:</label>
+        <input type="password" name="senha" id="senha_cad" required>
+
+        <label for="confirmar_senha">Confirmar Senha:</label>
+        <input type="password" name="confirmar_senha" id="confirmar_senha" required>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
