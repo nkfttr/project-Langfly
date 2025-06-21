@@ -1,7 +1,7 @@
 body {
-    background-color: #121212;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
     color: #E0E0E0;
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -22,21 +22,21 @@ body {
     font-family: 'Press Start 2P', sans-serif;
     padding: 10px 20px;
     cursor: pointer;
-    background-color: #46250a;
-    color: #deae61;
-    border: 2px solid #251c0c;
+    background-color: rgba(13, 37, 164, 0.57);
+    color: white;
+    border: 2px solid #666;
     border-radius: 5px;
     transition: 0.3s;
 }
 .menu button:hover {
-    background: rgba(128, 75, 7, 0.85);
+    background: rgba(29, 166, 238, 0.85);
 }
 
 .menu button:active {
     transform: scale(0.95);
 }
 .container{
-    background: rgba(207, 122, 13, 0.83);
+    background: rgba(3, 6, 73, 0.83);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
