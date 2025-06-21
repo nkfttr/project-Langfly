@@ -7,6 +7,7 @@ const gameOverElement = document.getElementById('gameOver');
 const finalScoreElement = document.getElementById('finalScore');
 const restartButton = document.getElementById('restartButton');
 const backButton = document.getElementById('backButton');
+const wordPt = document.getElementById('ptWord');
 
 
 //geração do objeto do desenho da nave
@@ -20,7 +21,6 @@ imgExplosion.src= "../imgs/sprites/tirospr1.png";
 let score = 0;
 let gameActive = true;
 let animationId;
-
 // Nave do jogador
 const ship = {
     x: canvas.width / 2 - 15,
@@ -42,9 +42,16 @@ const ship = {
     }
 };
 
+const textsPt = ["Ela", "Cavalo", "Ele", "Zebra"];
+const textsIng = ["She", "Horse", "He", "Zebra"];
+
+
 // blocos inimigos
 let blocks = [];
+let starsArray = [];
 
+let ptIndex = 0;
+let randomIngTextAtual = "";
 
 // função para iniciar o jogo
 function init() {
@@ -54,6 +61,9 @@ function init() {
     blocks = [];
     score = 0;
     gameActive = true;
+
+    //Iniciar randomização de palavras ptWord
+    novaRodada();
 
     // Criar blocos iniciais
     createBlocks();
@@ -66,31 +76,62 @@ function init() {
 
     // Iniciar loop do jogo
     gameLoop();
+
+
+
+}
+
+function novaRodada() {
+    ptIndex = Math.floor(Math.random() * textsPt.length);
+    randomIngTextAtual = textsIng[ptIndex];
+    wordPt.textContent = textsPt[ptIndex];
 }
 
 // função para criar blocos
 function createBlocks() {
-
-    // garantir que existam sempre 3 blocos
     while (blocks.length < 3) {
-        const size = 80; // Tamanho entre 20 e 50
+        const size = 80;
+
+        const texto = (blocks.length === 0)
+            ? randomIngTextAtual
+            : textsIng[Math.floor(Math.random() * textsIng.length)];
+
         blocks.push({
-            //geração dos blocos no canvas
             x: Math.random() * (canvas.width - size),
             y: -size,
             width: size,
             height: size,
-            //randomiza a cor do bloco
             color: `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`,
-            speed: Math.random() * 2 + 1,  // randomiza a velocidade entre 1 e 3
-            text: randomIngText()
+            speed: Math.random() * 2 + 1,
+            text: texto
         });
     }
+
+    // embaralhar os blocos para que o correto não fique sempre no index 0
+    blocks.sort(() => Math.random() - 0.5);
 }
 
 function createExplosion(x, y){
     ctx.drawImage(imgExplosion, x, y, 120, 120);
 }
+
+function drawRoundedRect(ctx, x, y, width, height, radius, color) {
+    ctx.beginPath();
+    ctx.moveTo(x + radius, y);
+    ctx.lineTo(x + width - radius, y);
+    ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+    ctx.lineTo(x + width, y + height - radius);
+    ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+    ctx.lineTo(x + radius, y + height);
+    ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+    ctx.lineTo(x, y + radius);
+    ctx.quadraticCurveTo(x, y, x + radius, y);
+    ctx.closePath();
+    ctx.fillStyle = color;
+    ctx.fill();
+}
+
+
 // Função para desenhar a nave
 function drawShip() {
 
@@ -120,19 +161,27 @@ function drawBullets() {
 // Função para desenhar os blocos
 function drawBlocks() {
     blocks.forEach(block => {
-        ctx.fillStyle = block.color;
-        ctx.fillRect(block.x, block.y, block.width, block.height);
+        // Sombra e estilo
+        ctx.shadowColor = "rgba(0,0,0,0.5)";
+        ctx.shadowBlur = 10;
+        ctx.shadowOffsetX = 4;
+        ctx.shadowOffsetY = 4;
 
+        // Desenhar bloco com cantos arredondados
+        drawRoundedRect(ctx, block.x, block.y, block.width, block.height, 12, block.color);
+
+        // Resetar sombra para não afetar o texto
+        ctx.shadowColor = "transparent";
+
+        // Texto centralizado
         ctxText.fillStyle = "white";
-        ctxText.font = "16px Arial";
+        ctxText.font = "bold 18px 'Arial'";
         ctxText.textAlign = "center";
         ctxText.textBaseline = "middle";
-        ctxText.fillText(block.text, block.x+40, block.y+40, 40);
-
-
+        ctxText.fillText(block.text, block.x + block.width / 2, block.y + block.height / 2);
     });
-
 }
+
 
 // Função para atualizar a posição da nave
 function updateShip() {
@@ -202,6 +251,9 @@ function updateBlocks() {
                 const blockX = blocks[i].x;
                 const blockY = blocks[i].y;
 
+                if (blocks[i].text === randomIngTextAtual) {
+                    starsArray.push("⭐");
+                }
                 blocks.splice(i, 1);
                 createExplosion(blockX, blockY);
                 score += 10;
@@ -233,10 +285,9 @@ function updateBlocks() {
 }
 
 //Gera textos aleatorios para os blocos
-function randomIngText(){
-    const texts = ["She", "Horse", "Him", "Zebra"]
-    const randomText = Math.floor(Math.random() * texts.length);
-    return texts[randomText];
+
+function checkWord(){
+        return ingIndex === ptIndex;
 }
 
 backButton.addEventListener('keydown', function(event){
@@ -244,20 +295,22 @@ backButton.addEventListener('keydown', function(event){
         event.preventDefault();
     }
 });
+
 // Função para atualizar a pontuação
 function updateScore() {
     scoreStars();
-    scoreElement.textContent = `Estrelas: ${starsArray}`;
+    scoreElement.textContent = `${starsArray}`;
 }
 
 //Adiciona estrelas ao inves de numeros na pontuação
 function scoreStars(){
     //limpa o array antes de adicionar novas estrelas à exibição, para nao adicionar mais deuma
-    starsArray = [];
-    //traduz a numeração da pontuação para somente um digito
-    let starCount = Math.floor(score / 100);
+
+    //traduz a numeração da pontuação para somente um digito, limitando a somente 3 estrelas
+    let starCount = Math.min(3, Math.floor(score / 100));
     //adiciona ao array uma estrela a cada centena
-    if(score > 99) {
+    if(score > 99 && starsArray.length <= 2) {
+
         for (let i = 1; i <= starCount; i++) {
             starsArray.push("⭐")
         }

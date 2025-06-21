@@ -1,62 +1,61 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // ELEMENTOS
+document.addEventListener('DOMContentLoaded', function () {
     const player = document.getElementById('player');
-    const phaseElements = document.querySelectorAll('.phase');
+    const coords = document.getElementById('coords');
+    const coordsY = document.getElementById('coordsY');
 
-    // INDICE INICIAL DA FASE NO ARRAY
-    let currentPhase = 0;
+    // ✅ Caminho rosa da borboleta (com novo ponto inicial em x:600, y:435)
+    const caminhoCurvo = [
+        { x: 522, y: 477 },// ponto inicial
+        { x: 529, y: 400 },
+        { x: 564, y: 394 },
+        { x: 570, y: 429 },
+        { x: 615, y: 425 },// fase 1
+        { x: 620, y: 484 },
+        { x: 692, y: 491 },
+        { x: 692, y: 513 },
+        { x: 729, y: 508 },
+        { x: 797, y: 505 },// fase 2
+        { x: 500, y: 345 },
+    ];
 
-    // POSIÇOES NAS FASES SVG
-    const phasePositions = Array.from(phaseElements).map(phase => {
-        // VERIFICA O ELEMNTO, NO CASO TEXT
-        if (phase.tagName === 'text') {
-            return {
-                x: parseFloat(phase.getAttribute('x')),
-                y: parseFloat(phase.getAttribute('y'))
-            };
-        }
+    const svg = document.querySelector('svg');
+    svg.addEventListener('mousemove', function(event) {
+        const pt = svg.createSVGPoint();
+        pt.x = event.clientX;
+        pt.y = event.clientY;
+        const localPoint = pt.matrixTransform(svg.getScreenCTM().inverse());
+        console.log(`SVG coords → X: ${Math.round(localPoint.x)}, Y: ${Math.round(localPoint.y)}`);
     });
 
-    // ATUAIZAÇÃO DA POSIÇÃO DO PLAYER
-    function updatePlayerPosition() {
-        // Atualiza a posição para a fase atual
-        const targetPos = phasePositions[currentPhase];
-        // VERIFICA A TAG DO JOGADOR, SENDO UM CIRCULO
+    let posIndex = 0; // começa em 600x435
+
+    function moverParaPontoAtual() {
+        const target = caminhoCurvo[posIndex];
         if (player.tagName === 'circle') {
-            // POSIÇÕES DO JOGADOR EM RELAÇÃO ÀS FASES
-            player.setAttribute('cx', targetPos.x+20);
-            player.setAttribute('cy', targetPos.y-5);
+            player.setAttribute('cx', target.x);
+            player.setAttribute('cy', target.y);
         }
 
-        // ATUALIZAÇÃO DE COORDENADAS
-        coords.textContent = `X: ${Math.round(targetPos.x)}`;
-        coordsY.textContent = `Y: ${Math.round(targetPos.y)}`;
+        if (coords && coordsY) {
+            coords.textContent = `X: ${Math.round(target.x)}`;
+            coordsY.textContent = `Y: ${Math.round(target.y)}`;
+        }
     }
 
-    // POSICÃO DO JOGADOR
-    updatePlayerPosition();
+    moverParaPontoAtual();
 
     document.addEventListener('keydown', (event) => {
-        // DIREITA
-        if (event.key === 'd' || event.key === 'D') {
-            //MOVE O PLAYER NO ARRAY
-            if (currentPhase < phaseElements.length - 1) {
-                currentPhase++;
-                updatePlayerPosition();
-            }
-        }
-        // ESQUERDA
-        else if (event.key === 'a' || event.key === 'A') {
-            //MOVE O PLAYER NO ARRAY
-            if (currentPhase > 0) {
-                currentPhase--;
-                updatePlayerPosition();
-            }
+        if ((event.key === 'd' || event.key === 'D') && posIndex < caminhoCurvo.length - 1) {
+            posIndex++;
+            moverParaPontoAtual();
+        } else if ((event.key === 'a' || event.key === 'A') && posIndex > 0) {
+            posIndex--;
+            moverParaPontoAtual();
         }
 
-        // MUDA PRA FASE1
-        if (currentPhase === 1 && event.key === 'k') {
-            window.location.href = "..//testes/fase1Teste.html";
+        // Exemplo: se chegar em um ponto específico, abrir fase1
+        if (posIndex === 5 && event.key === 'k') {
+            window.location.href = "../fase1/fase1.html";
         }
     });
 });

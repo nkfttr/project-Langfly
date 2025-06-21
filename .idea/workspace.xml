@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Criei uma div descartavel no momento em fase1Teste.html;&#10;&#10;Criação de explosão ao destruir um bloco.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/fase1Teste.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/fase1Teste.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/fase1Teste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssFiles/MapaStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/MapaStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fase1/fase1Teste.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fase1/fase1Teste.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fase1/fase1Teste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/mapCode.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mapCode.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/nkfttr/project-Langfly.git",
-    "accountId": "c031e882-7278-4d33-b5b4-5f2ec8154616"
+    "accountId": "cdc8e0ea-2daf-47e0-ba18-c0c176d4f45b"
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
@@ -63,12 +65,14 @@
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.mapa.html.executor": "Run",
     "JavaScript Debug.menu.html.executor": "Run",
+    "Node.js.fase1.js.executor": "Run",
     "Node.js.fase1Teste.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Nico/WebstormProjects/project-Langfly",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -121,7 +125,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -145,6 +150,7 @@
       <workItem from="1745809630507" duration="5872000" />
       <workItem from="1747024849709" duration="2000" />
       <workItem from="1747024974908" duration="319000" />
+      <workItem from="1750386061462" duration="13320000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />

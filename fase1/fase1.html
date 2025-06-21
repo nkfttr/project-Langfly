@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Block Shooter</title>
-    <link rel="stylesheet" href="fase1Teste.css">
+    <link rel="stylesheet" href="fase1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 <div><button id="backButton" onclick= "window.location.href='..//htmlFiles/mapa.html'">Voltar</button></div>
 
-<div id="instructions">Ola</div>
+<div id="instructions"></div>
+
+<div id="score">Pontos: 0</div>
+<div id="ptWord">PALAVRAPT</div>
 
 <div id="gameContainer">
     <canvas id="gameCanvas" width="400" height="600"></canvas>
-    <div id="score">Pontos: 0</div>
+
     <div id="gameOver">
         <h2>Game Over</h2>
         <p>Sua pontuação: <span id="finalScore">0</span></p>
@@ -22,6 +27,6 @@
     </div>
 </div>
 
-<script src="fase1Teste.js"></script>
+<script src="fase1.js"></script>
 </body>
 </html>

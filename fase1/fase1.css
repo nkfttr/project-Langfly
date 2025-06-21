@@ -4,9 +4,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000;
-    font-family: Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     overflow: hidden;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
 
 #gameContainer {
@@ -21,11 +21,18 @@ canvas {
     border: 2px solid #333;
     background-color: #111;
 }
+#ptWord{
+    position: absolute;
+    top: 10px;
+    left: 650px;
+    color: white;
+    font-size: 40px;
+}
 
 #score {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 400px;
+    left: 495px;
     color: white;
     font-size: 20px;
 }
@@ -42,19 +49,21 @@ canvas {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #d46713;
     border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 10px 2px;
-    cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
 }
-
+button:hover {
+    transform: scale(1.05);
+    background-color: #d9915f;
+}
 .backButton{
     left: 100px !important;
 }
