@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
             moverParaPontoSuavemente(caminhoCurvo[posIndex]);
         }
 
-        if (posIndex === 4 && event.key === 'k') {
+        if (posIndex === 4 && event.key === 'k') {//1
             window.location.href = "../fase1/fase1.html";
         }
     });
