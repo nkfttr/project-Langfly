@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Detalhes na fase adicionados;&#10;&#10;Movimetção no mapa atualizada;&#10;&#10;Novo sprite de player adicionado;">
-      <change beforePath="$PROJECT_DIR$/cssFiles/menuCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/menuCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlFiles/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/menu.html" afterDir="false" />
+    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Css do menu atualizado.">
+      <change beforePath="$PROJECT_DIR$/scripts/mapCode.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mapCode.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,7 @@
       <workItem from="1745809630507" duration="5872000" />
       <workItem from="1747024849709" duration="2000" />
       <workItem from="1747024974908" duration="319000" />
-      <workItem from="1750386061462" duration="16395000" />
+      <workItem from="1750386061462" duration="16797000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />
@@ -269,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750491767656</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Css do menu atualizado.">
+      <option name="closed" value="true" />
+      <created>1750492133930</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1750492133930</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +298,7 @@
     <MESSAGE value="Criei uma div descartavel no momento em fase1Teste.html;&#10;&#10;Criação de explosão ao destruir um bloco." />
     <MESSAGE value="Codigo para atingir a palavra certa implementado;&#10;&#10;Front-end da fase 1 atualizados;&#10;&#10;Movimentação do caminho do mapa atualizado." />
     <MESSAGE value="Detalhes na fase adicionados;&#10;&#10;Movimetção no mapa atualizada;&#10;&#10;Novo sprite de player adicionado;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Detalhes na fase adicionados;&#10;&#10;Movimetção no mapa atualizada;&#10;&#10;Novo sprite de player adicionado;" />
+    <MESSAGE value="Css do menu atualizado." />
+    <option name="LAST_COMMIT_MESSAGE" value="Css do menu atualizado." />
   </component>
 </project>
