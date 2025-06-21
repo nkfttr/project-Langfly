@@ -69,7 +69,7 @@ function init() {
     createBlocks();
 
     // Atualizar pontuação
-    updateScore();
+
 
     // Esconder tela de game over
     gameOverElement.style.display = 'none';
@@ -84,7 +84,7 @@ function init() {
 function novaRodada() {
     ptIndex = Math.floor(Math.random() * textsPt.length);
     randomIngTextAtual = textsIng[ptIndex];
-    wordPt.textContent = textsPt[ptIndex];
+    wordPt.textContent = "(" + textsPt[ptIndex] + ") em português é?";
 }
 
 // função para criar blocos
@@ -130,7 +130,6 @@ function drawRoundedRect(ctx, x, y, width, height, radius, color) {
     ctx.fillStyle = color;
     ctx.fill();
 }
-
 
 // Função para desenhar a nave
 function drawShip() {
@@ -182,7 +181,6 @@ function drawBlocks() {
     });
 }
 
-
 // Função para atualizar a posição da nave
 function updateShip() {
     if (keys.ArrowLeft) {
@@ -217,7 +215,12 @@ function updateBullets() {
     // Verificar se o jogador está atirando
     if (keys.Space && shootCooldown === 0) {
         ship.shoot();
-        shootCooldown = 15; // Delay entre tiros
+        shootCooldown = 30; // Delay entre tiros
+    }
+
+    else if(keys.K && shootCooldown === 0){
+        ship.shoot();
+        shootCooldown = 30;
     }
 
     // Mover projéteis
@@ -251,8 +254,12 @@ function updateBlocks() {
                 const blockX = blocks[i].x;
                 const blockY = blocks[i].y;
 
-                if (blocks[i].text === randomIngTextAtual) {
+                if (blocks[i].text === randomIngTextAtual && starsArray.length <=2) {
                     starsArray.push("⭐");
+                    novaRodada();
+                }
+                else if(blocks[i].text === randomIngTextAtual){
+                    novaRodada();
                 }
                 blocks.splice(i, 1);
                 createExplosion(blockX, blockY);
@@ -298,24 +305,9 @@ backButton.addEventListener('keydown', function(event){
 
 // Função para atualizar a pontuação
 function updateScore() {
-    scoreStars();
     scoreElement.textContent = `${starsArray}`;
 }
 
-//Adiciona estrelas ao inves de numeros na pontuação
-function scoreStars(){
-    //limpa o array antes de adicionar novas estrelas à exibição, para nao adicionar mais deuma
-
-    //traduz a numeração da pontuação para somente um digito, limitando a somente 3 estrelas
-    let starCount = Math.min(3, Math.floor(score / 100));
-    //adiciona ao array uma estrela a cada centena
-    if(score > 99 && starsArray.length <= 2) {
-
-        for (let i = 1; i <= starCount; i++) {
-            starsArray.push("⭐")
-        }
-    }
-}
 
 // Função de game over
 function gameOver() {
@@ -326,7 +318,6 @@ function gameOver() {
 }
 
 // Loop principal do jogo
-
 function gameLoop() {
     if (!gameActive) return;
 
@@ -350,19 +341,22 @@ function gameLoop() {
 const keys = {
     ArrowLeft: false,
     ArrowRight: false,
-    Space: false
+    Space: false,
+    K: false
 };
 // Event listeners para controles
 document.addEventListener('keydown', (e) => {
     if (e.code === 'ArrowLeft') keys.ArrowLeft = true;
     if (e.code === 'ArrowRight') keys.ArrowRight = true;
     if (e.code === 'Space') keys.Space = true;
+    if (e.code === 'KeyK') keys.K = true;
 });
 
 document.addEventListener('keyup', (e) => {
     if (e.code === 'ArrowLeft') keys.ArrowLeft = false;
     if (e.code === 'ArrowRight') keys.ArrowRight = false;
     if (e.code === 'Space') keys.Space = false;
+    if (e.code === 'KeyK') keys.K = false;
 });
 
 

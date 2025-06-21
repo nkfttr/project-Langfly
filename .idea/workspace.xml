@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Criei uma div descartavel no momento em fase1Teste.html;&#10;&#10;Criação de explosão ao destruir um bloco.">
+    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Codigo para atingir a palavra certa implementado;&#10;&#10;Front-end da fase 1 atualizados;&#10;&#10;Movimentação do caminho do mapa atualizado.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cssFiles/MapaStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/MapaStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fase1/fase1Teste.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fase1/fase1Teste.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fase1/fase1Teste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fase1/fase1.css" beforeDir="false" afterPath="$PROJECT_DIR$/fase1/fase1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fase1/fase1.html" beforeDir="false" afterPath="$PROJECT_DIR$/fase1/fase1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fase1/fase1.js" beforeDir="false" afterPath="$PROJECT_DIR$/fase1/fase1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFiles/mapa.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/mapa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lgin/loginCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/lgin/loginCSS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/mapCode.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mapCode.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +64,7 @@
     "JavaScript Debug.fase1Teste.html.executor": "Run",
     "JavaScript Debug.func.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.loginHTML.html.executor": "Run",
     "JavaScript Debug.mapa.html.executor": "Run",
     "JavaScript Debug.menu.html.executor": "Run",
     "Node.js.fase1.js.executor": "Run",
@@ -150,7 +152,7 @@
       <workItem from="1745809630507" duration="5872000" />
       <workItem from="1747024849709" duration="2000" />
       <workItem from="1747024974908" duration="319000" />
-      <workItem from="1750386061462" duration="13320000" />
+      <workItem from="1750386061462" duration="16059000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />
@@ -256,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745817926401</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Codigo para atingir a palavra certa implementado;&#10;&#10;Front-end da fase 1 atualizados;&#10;&#10;Movimentação do caminho do mapa atualizado.">
+      <option name="closed" value="true" />
+      <created>1750488961319</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1750488961319</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +286,7 @@
     <MESSAGE value="Alteração no codigo completo da fase 1 utilizando o Canvas.&#10;Codigo de geração rpocedural dos blocos implementada.&#10;Cooldown dos tiros implementado.&#10;Randomização das palavras, implementado.&#10;Pontuação implementada.&#10;Tela de Gameover implementada." />
     <MESSAGE value="Conversão de pontuação para estrelas feita." />
     <MESSAGE value="Criei uma div descartavel no momento em fase1Teste.html;&#10;&#10;Criação de explosão ao destruir um bloco." />
-    <option name="LAST_COMMIT_MESSAGE" value="Criei uma div descartavel no momento em fase1Teste.html;&#10;&#10;Criação de explosão ao destruir um bloco." />
+    <MESSAGE value="Codigo para atingir a palavra certa implementado;&#10;&#10;Front-end da fase 1 atualizados;&#10;&#10;Movimentação do caminho do mapa atualizado." />
+    <option name="LAST_COMMIT_MESSAGE" value="Codigo para atingir a palavra certa implementado;&#10;&#10;Front-end da fase 1 atualizados;&#10;&#10;Movimentação do caminho do mapa atualizado." />
   </component>
 </project>

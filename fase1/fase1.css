@@ -24,7 +24,7 @@ canvas {
 #ptWord{
     position: absolute;
     top: 10px;
-    left: 650px;
+    left: 580px;
     color: white;
     font-size: 40px;
 }
@@ -49,13 +49,14 @@ canvas {
 }
 
 button {
-    background-color: #d46713;
-    border: none;
+    background-color: #333;
     color: white;
+    border: 2px solid #666;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+    font-family: 'Press Start 2P', sans-serif;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     transition: transform 0.2s;
@@ -64,9 +65,7 @@ button:hover {
     transform: scale(1.05);
     background-color: #d9915f;
 }
-.backButton{
-    left: 100px !important;
-}
+
 #instructions{
     margin-bottom: 20px;
 }
