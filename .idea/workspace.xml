@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Css do menu atualizado.">
-      <change beforePath="$PROJECT_DIR$/scripts/mapCode.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mapCode.js" afterDir="false" />
+    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Localizção da fase no array do mapa atualizado.">
+      <change afterPath="$PROJECT_DIR$/fase1/commands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/commands.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fase1/fase1.css" beforeDir="false" afterPath="$PROJECT_DIR$/fase1/fase1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fase1/fase1.html" beforeDir="false" afterPath="$PROJECT_DIR$/fase1/fase1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fase1/fase1.js" beforeDir="false" afterPath="$PROJECT_DIR$/fase1/fase1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +51,19 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2uVkoaqEgQm9shD2xkYhQZPSOIf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.fase1.html (1).executor": "Run",
     "JavaScript Debug.fase1.html.executor": "Run",
     "JavaScript Debug.fase1Teste.html.executor": "Run",
     "JavaScript Debug.func.html.executor": "Run",
@@ -89,11 +99,11 @@
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\testes" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.fase1.html (1)">
     <configuration name="fase1Teste.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project-Langfly/testes/fase1Teste.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="fase1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project-Langfly/htmlFiles/OLD/fase1.html" useBuiltInWebServerPort="true">
+    <configuration name="fase1.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project-Langfly/fase1/fase1.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="func.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project-Langfly/htmlFiles/func.html" useBuiltInWebServerPort="true">
@@ -110,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.fase1.html (1)" />
         <item itemvalue="JavaScript Debug.menu.html" />
         <item itemvalue="JavaScript Debug.func.html" />
         <item itemvalue="JavaScript Debug.mapa.html" />
         <item itemvalue="JavaScript Debug.fase1Teste.html" />
-        <item itemvalue="JavaScript Debug.fase1.html" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +156,7 @@
       <workItem from="1745809630507" duration="5872000" />
       <workItem from="1747024849709" duration="2000" />
       <workItem from="1747024974908" duration="319000" />
-      <workItem from="1750386061462" duration="16797000" />
+      <workItem from="1750386061462" duration="24885000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />
@@ -276,13 +286,30 @@
       <option name="project" value="LOCAL" />
       <updated>1750492133930</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Css do menu atualizado.">
+      <option name="closed" value="true" />
+      <created>1750492411330</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1750492411330</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Localizção da fase no array do mapa atualizado.">
+      <option name="closed" value="true" />
+      <created>1750492478372</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1750492478372</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Organized files" />
     <MESSAGE value="adds" />
     <MESSAGE value="Movimentação no mapa paras as 3 primeiras fases;&#10;Utiliza o &quot;k&quot; para entrar na fase 2, feito como teste;&#10;Icone do discord colocado." />
@@ -299,6 +326,7 @@
     <MESSAGE value="Codigo para atingir a palavra certa implementado;&#10;&#10;Front-end da fase 1 atualizados;&#10;&#10;Movimentação do caminho do mapa atualizado." />
     <MESSAGE value="Detalhes na fase adicionados;&#10;&#10;Movimetção no mapa atualizada;&#10;&#10;Novo sprite de player adicionado;" />
     <MESSAGE value="Css do menu atualizado." />
-    <option name="LAST_COMMIT_MESSAGE" value="Css do menu atualizado." />
+    <MESSAGE value="Localizção da fase no array do mapa atualizado." />
+    <option name="LAST_COMMIT_MESSAGE" value="Localizção da fase no array do mapa atualizado." />
   </component>
 </project>

@@ -31,6 +31,7 @@ const ship = {
     color: '#00BFFF', //nao mais utilizada por causa da geração da imagem
     dx: 0,  // direção x
     bullets: [],
+
     shoot() {
         this.bullets.push({
             x: this.x + this.width / 2 - 2.5,
@@ -38,6 +39,16 @@ const ship = {
             width: 5,
             height: 10,
             color: '#FF0'
+        });
+    },
+    wrongBullets: [],
+    shootWrong() {
+        this.wrongBullets.push({
+            x: this.x + this.width / 2 - 2.5,
+            y: this.y,
+            width: 5,
+            height: 10,
+            color: '#F00' // vermelho
         });
     }
 };
@@ -85,6 +96,14 @@ function novaRodada() {
     ptIndex = Math.floor(Math.random() * textsPt.length);
     randomIngTextAtual = textsIng[ptIndex];
     wordPt.textContent = "(" + textsPt[ptIndex] + ") em português é?";
+
+    // Ativa o efeito de brilho
+    wordPt.classList.add("brilhar");
+
+    // Remove após a animação terminar (para permitir reativar depois)
+    setTimeout(() => {
+        wordPt.classList.remove("brilhar");
+    }, 600);
 }
 
 // função para criar blocos
@@ -155,6 +174,10 @@ function drawBullets() {
         ctx.fillStyle = bullet.color;
         ctx.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
     });
+    ship.wrongBullets.forEach(bullet => {
+        ctx.fillStyle = bullet.color;
+        ctx.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
+    });
 }
 
 // Função para desenhar os blocos
@@ -219,7 +242,7 @@ function updateBullets() {
     }
 
     else if(keys.K && shootCooldown === 0){
-        ship.shoot();
+        ship.shootWrong();
         shootCooldown = 30;
     }
 
@@ -230,6 +253,12 @@ function updateBullets() {
         // Remover projéteis fora da tela
         if (ship.bullets[i].y < 0) {
             ship.bullets.splice(i, 1);
+        }
+    }
+    for (let i = ship.wrongBullets.length - 1; i >= 0; i--) {
+        ship.wrongBullets[i].y -= 5;
+        if (ship.wrongBullets[i].y < 0) {
+            ship.wrongBullets.splice(i, 1);
         }
     }
 }
@@ -254,19 +283,46 @@ function updateBlocks() {
                 const blockX = blocks[i].x;
                 const blockY = blocks[i].y;
 
-                if (blocks[i].text === randomIngTextAtual && starsArray.length <=2) {
-                    starsArray.push("⭐");
+                if (blocks[i].text === randomIngTextAtual) {
+                    if (starsArray.length <= 2) {
+                        starsArray.push("⭐");
+                    }
                     novaRodada();
+                    blocks.splice(i, 1);
+                    createExplosion(blockX, blockY);
+                    score += 10;
+                    updateScore();
+                    createBlocks(); // Criar novo bloco
+                } else {
+                    score = score - 10;
                 }
-                else if(blocks[i].text === randomIngTextAtual){
-                    novaRodada();
-                }
-                blocks.splice(i, 1);
-                createExplosion(blockX, blockY);
-                score += 10;
-                updateScore();
-                createBlocks(); // Criar novo bloco
                 break;
+            }
+        }
+
+        //COLISAO COM TIROS DAS PALAVRAS ERRADAS
+        for (let j = ship.wrongBullets.length - 1; j >= 0; j--) {
+            if (
+                ship.wrongBullets[j].x < blocks[i].x + blocks[i].width &&
+                ship.wrongBullets[j].x + ship.wrongBullets[j].width > blocks[i].x &&
+                ship.wrongBullets[j].y < blocks[i].y + blocks[i].height &&
+                ship.wrongBullets[j].y + ship.wrongBullets[j].height > blocks[i].y
+            ) {
+                // Só elimina se for palavra errada
+                if (blocks[i].text !== randomIngTextAtual) {
+                    score += 10;
+                    ship.wrongBullets.splice(j, 1);
+                    const blockX = blocks[i].x;
+                    const blockY = blocks[i].y;
+                    blocks.splice(i, 1);
+                    createExplosion(blockX, blockY);
+                    createBlocks();
+                    break;
+                } else {
+                    // Penalidade opcional se acertar palavra certa com o tiro errado
+                    ship.wrongBullets.splice(j, 1);
+                    score = score - 10;
+                }
             }
         }
 
@@ -307,7 +363,6 @@ backButton.addEventListener('keydown', function(event){
 function updateScore() {
     scoreElement.textContent = `${starsArray}`;
 }
-
 
 // Função de game over
 function gameOver() {
