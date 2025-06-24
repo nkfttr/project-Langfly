@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 797, y: 505 }, // fase 2
         { x: 794, y: 447 },
         { x: 747, y: 447 },
-        { x: 742, y: 392 }
+        { x: 742, y: 392 } //fase 3
     ];
 
     // Coordenadas do mouse (debug)
@@ -84,6 +84,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (posIndex === 4 && event.key === 'k') {//1
             window.location.href = "../fase1/fase1.html";
+        }
+        if (posIndex === 9 && event.key === 'k'){
+            window.location.href = "../htmlFiles/standBy.html";
+        }
+        if (posIndex === 12 && event.key === 'k'){
+            window.location.href = "../htmlFiles/standBy.html";
         }
     });
 });

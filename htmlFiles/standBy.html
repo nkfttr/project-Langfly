@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <title>Fase em Andamento</title>
+  <style>
+
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;}
+
+    body {
+      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      font-family: 'Press Start 2P', sans-serif;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .loading {
+      margin: 30px auto;
+      width: 60px;
+      height: 60px;
+      border: 6px solid rgba(255, 255, 255, 0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #6e54ff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #6e54ff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>🦋 Fase em Andamento</h1>
+  <p>Essa fase está em desenvolvimento, <br>estamos ansiosos para anuncia-lá...</p>
+  <div class="loading"></div>
+
+  <a href="mapa.html" class="btn">Voltar</a>
+</div>
+</body>
+</html>

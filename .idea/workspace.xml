@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Localizção da fase no array do mapa atualizado.">
-      <change afterPath="$PROJECT_DIR$/imgs/estrelaRosa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lgin/createAccount.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lgin/loginScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lgin/oldHtml/loginCSS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lgin/oldHtml/loginHTML.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lgin/style.css" afterDir="false" />
+    <list default="true" id="0471b48d-2b00-4083-b026-98c1c1faa1b6" name="Changes" comment="Detalhes gráficos implementados">
+      <change afterPath="$PROJECT_DIR$/htmlFiles/standBy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cssFiles/cred.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/cred.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cssFiles/fucCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssFiles/fucCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlFiles/creditos.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/creditos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlFiles/func.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlFiles/mapa.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/mapa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlFiles/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlFiles/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lgin/loginCSS.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lgin/loginHTML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/mapCode.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mapCode.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -68,38 +54,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.fase1.html (1).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.fase1.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.fase1Teste.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.func.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.loginHTML.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.mapa.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.menu.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.fase1.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.fase1Teste.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nico/WebstormProjects/project-Langfly&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.fase1.html (1).executor": "Run",
+    "JavaScript Debug.fase1.html.executor": "Run",
+    "JavaScript Debug.fase1Teste.html.executor": "Run",
+    "JavaScript Debug.func.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.loginHTML.html.executor": "Run",
+    "JavaScript Debug.mapa.html.executor": "Run",
+    "JavaScript Debug.menu.html.executor": "Run",
+    "JavaScript Debug.standBy.html.executor": "Run",
+    "Node.js.fase1.js.executor": "Run",
+    "Node.js.fase1Teste.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Nico/WebstormProjects/project-Langfly",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\imgs\sprites" />
@@ -109,7 +96,7 @@
       <recent name="C:\Users\Nico\WebstormProjects\project-Langfly\testes" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.fase1.html (1)">
+  <component name="RunManager">
     <configuration name="fase1Teste.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project-Langfly/testes/fase1Teste.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -166,7 +153,7 @@
       <workItem from="1747024849709" duration="2000" />
       <workItem from="1747024974908" duration="319000" />
       <workItem from="1750386061462" duration="24885000" />
-      <workItem from="1750729549716" duration="5494000" />
+      <workItem from="1750729549716" duration="5794000" />
     </task>
     <task id="LOCAL-00001" summary="Organized files">
       <option name="closed" value="true" />
@@ -312,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750492478372</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Detalhes gráficos implementados">
+      <option name="closed" value="true" />
+      <created>1750735218488</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1750735218489</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +332,7 @@
     <MESSAGE value="Detalhes na fase adicionados;&#10;&#10;Movimetção no mapa atualizada;&#10;&#10;Novo sprite de player adicionado;" />
     <MESSAGE value="Css do menu atualizado." />
     <MESSAGE value="Localizção da fase no array do mapa atualizado." />
-    <option name="LAST_COMMIT_MESSAGE" value="Localizção da fase no array do mapa atualizado." />
+    <MESSAGE value="Detalhes gráficos implementados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Detalhes gráficos implementados" />
   </component>
 </project>
