@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangFly - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Lado Esquerdo -->
+        <div class="left">
+            <div class="logo">
+                <h1 id="logoborb">🦋</h1>
+                <h1>LangFly</h1>
+            </div>
+            <div class="text">
+                <h2>Jogo de Idiomas e<br> comunidade ativa</h2>
+                <p>Como borboletas, as palavras atravessam fronteiras.<br>
+                Escolha seu idioma e comece a voar!</p>
+            </div>
+        </div>
+
+        <!-- Lado Direito -->
+        <div class="right">
+            <h2>Bem-vindo Novamente,<br>Hora de Voltar a Voar</h2>
+
+            <form onsubmit="return login()">
+                <input type="text" id="username" placeholder="Usuário" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Lembrar de Mim</label>
+                </div>
+                <button type="submit" class="login-btn">LOG IN</button>
+            </form>
+
+            <p class="signup">Não tem conta ainda? <a href="createAccount.html">Só Criar!</a></p>
+            <div class="discord-link">
+                <a href="#">Entre no nosso Discord</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginScript.js"></script>
+</body>
+
+</html> 
+

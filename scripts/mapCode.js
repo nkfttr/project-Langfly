@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 692, y: 513 },
         { x: 729, y: 508 },
         { x: 797, y: 505 }, // fase 2
-        { x: 500, y: 345 }
+        { x: 794, y: 447 },
+        { x: 747, y: 447 },
+        { x: 742, y: 392 }
     ];
 
     // Coordenadas do mouse (debug)

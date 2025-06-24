@@ -1,0 +1,162 @@
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+.left {
+    flex: 1;
+    background: linear-gradient(135deg, #482d91, #b14fff, #5dafff);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#logoborb{
+    scale: 100%;
+}
+.logo img {
+    width: 40px;
+}
+
+.logo h1 {
+    font-size: 32px;
+}
+
+.text h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.text p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.right {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+.right h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.social-login {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-login button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.google {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.discord {
+    background-color: #5865F2;
+    color: white;
+}
+
+form {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+.login-btn {
+    background: linear-gradient(135deg, #6e54ff, #aa67ff);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #5938ff, #8f42ff);
+}
+
+.signup {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: #6e54ff;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.discord-link {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.discord-link a {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+.discord-link a:hover {
+    text-decoration: underline;
+}
